@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="سایت دنیای حیوانات با تصاویر و تلفظ فارسی و انگیسی حیوانات مختلف برای آموزش و سرگرمی.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <title>دنیای حیوانات</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'IranSans', sans-serif;
+      background: #47e27e;
+      background-size: cover;
+      min-height: 100vh;
+      color: #333;
+    }
+
+
+    h1 {
+      text-align: center;
+      padding: 25px;
+      color: #FFD700; /* طلایی */
+      background: green;
+      box-shadow: 2px 4px 15px;
+      margin: 0;
+      font-size: 2.2em;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+
+    .card {
+      width: 150px;
+      height: 220px;
+      background: darkturquoise;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      padding: 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: .3s;
+      margin: 5px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:16px;
+      padding:16px;
+    }
+
+
+    .card{
+      width: 90%;
+      height: 350px;
+      border: 10px solid;
+      background:orange;
+      border-radius:16px;
+      box-shadow:2px 4px 10px rgba(0,0,0,0.25);
+      padding:15px;
+      text-align:center;
+      cursor:pointer;
+      transition:.3s;
+      margin: 0px;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(255,215,0,0.7);
+    }
+
+
+    .card img{
+      width:300px;
+      height:350px;
+      object-fit:contain;
+      display:block;
+      margin:auto;
+    }
+
+    .card p{
+      margin:8px 0 0;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🐾 دنیای حیوانات</h1>
+<div class="grid">
+
+  <div class="card" onclick="play('sounds/شیر.mp3')"><img src="images/شیر.jpeg"><p>شیر</p></div>
+  <div class="card" onclick="play('sounds/ببر.mp3')"><img src="images/ببر.jpeg"><p>ببر</p></div>
+  <div class="card" onclick="play('sounds/پلنگ.mp3')"><img src="images/پلنگ.jpeg"><p>پلنگ</p></div>
+  <div class="card" onclick="play('sounds/گرگ.mp3')"><img src="images/گرگ.jpeg"><p>گرگ</p></div>
+  <div class="card" onclick="play('sounds/کفتار.mp3')"><img src="images/کفتار.jpeg"><p>کفتار</p></div>
+  <div class="card" onclick="play('sounds/شغال.mp3')"><img src="images/شغال.jpeg"><p>شغال</p></div>
+  <div class="card" onclick="play('sounds/خرس.mp3')"><img src="images/خرس.jpeg"><p>خرس</p></div>
+  <div class="card" onclick="play('sounds/پاندا.mp3')"><img src="images/پاندا.jpeg"><p>پاندا</p></div>
+  <div class="card" onclick="play('sounds/گراز.mp3')"><img src="images/گراز.jpeg"><p>گراز</p></div>
+  <div class="card" onclick="play('sounds/یوزپلنگ.mp3')"><img src="images/یوزپلنگ.jpeg"><p>یوزپلنگ</p></div>
+  <div class="card" onclick="play('sounds/روباه.mp3')"><img src="images/روباه.jpeg"><p>روباه</p></div>
+  <div class="card" onclick="play('sounds/گربه.mp3')"><img src="images/گربه.jpeg"><p>گربه</p></div>
+  <div class="card" onclick="play('sounds/سگ.mp3')"><img src="images/سگ.jpeg"><p>سگ</p></div>
+  <div class="card" onclick="play('sounds/میمون.mp3')"><img src="images/میمون.jpeg"><p>میمون</p></div>
+  <div class="card" onclick="play('sounds/کرگدن.mp3')"><img src="images/کرگدن.jpeg"><p>کرگدن</p></div>
+  <div class="card" onclick="play('sounds/اسب آبی.mp3')"><img src="images/اسب آبی.jpeg"><p>اسب آبی</p></div>
+  <div class="card" onclick="play('sounds/فیل.mp3')"><img src="images/فیل.jpeg"><p>فیل</p></div>
+  <div class="card" onclick="play('sounds/نهنگ.mp3')"><img src="images/نهنگ.jpeg"><p>نهنگ</p></div>
+  <div class="card" onclick="play('sounds/کوسه.mp3')"><img src="images/کوسه.jpeg"><p>کوسه</p></div>
+  <div class="card" onclick="play('sounds/دلفین.mp3')"><img src="images/دلفین.jpeg"><p>دلفین</p></div>
+  <div class="card" onclick="play('sounds/ماهی.mp3')"><img src="images/ماهی.jpeg"><p>ماهی</p></div>
+  <div class="card" onclick="play('sounds/اسب.mp3')"><img src="images/اسب.jpeg"><p>اسب</p></div>
+  <div class="card" onclick="play('sounds/گوزن.mp3')"><img src="images/گوزن.jpeg"><p>گوزن</p></div>
+  <div class="card" onclick="play('sounds/آهو.mp3')"><img src="images/آهو.jpeg"><p>آهو</p></div>
+  <div class="card" onclick="play('sounds/بزکوهی.mp3')"><img src="images/بزکوهی.jpeg"><p>بزکوهی</p></div>
+  <div class="card" onclick="play('sounds/شتر.mp3')"><img src="images/شتر.jpeg"><p>شتر</p></div>
+  <div class="card" onclick="play('sounds/گاو.mp3')"><img src="images/گاو.jpeg"><p>گاو</p></div>
+  <div class="card" onclick="play('sounds/بز.mp3')"><img src="images/بز.jpeg"><p>بز</p></div>
+  <div class="card" onclick="play('sounds/گوسفند.mp3')"><img src="images/گوسفند.jpeg"><p>گوسفند</p></div>
+  <div class="card" onclick="play('sounds/گورخر.mp3')"><img src="images/گورخر.jpeg"><p>گورخر</p></div>
+  <div class="card" onclick="play('sounds/عقاب.mp3')"><img src="images/عقاب.jpeg"><p>عقاب</p></div>
+  <div class="card" onclick="play('sounds/شاهین.mp3')"><img src="images/شاهین.jpeg"><p>شاهین</p></div>
+  <div class="card" onclick="play('sounds/قرقی.mp3')"><img src="images/قرقی.jpeg"><p>قرقی</p></div>
+  <div class="card" onclick="play('sounds/کبک.mp3')"><img src="images/کبک.jpeg"><p>کبک</p></div>
+  <div class="card" onclick="play('sounds/بلدرچین.mp3')"><img src="images/بلدرچین.jpeg"><p>بلدرچین</p></div>
+  <div class="card" onclick="play('sounds/طاووس.mp3')"><img src="images/طاووس.jpeg"><p>طاووس</p></div>
+  <div class="card" onclick="play('sounds/قرقاوول.mp3')"><img src="images/قرقاول.jpeg"><p>قرقاول</p></div>
+  <div class="card" onclick="play('sounds/پرستو.mp3')"><img src="images/پرستو.jpeg"><p>پرستو</p></div>
+  <div class="card" onclick="play('sounds/گنجشک.mp3')"><img src="images/گنجشک.jpeg"><p>گنجشک</p></div>
+  <div class="card" onclick="play('sounds/بلبل.mp3')"><img src="images/بلبل.jpeg"><p>بلبل</p></div>
+  <div class="card" onclick="play('sounds/طوطی.mp3')"><img src="images/طوطی.jpeg"><p>طوطی</p></div>
+  <div class="card" onclick="play('sounds/جغد.mp3')"><img src="images/جغد.jpeg"><p>جغد</p></div>
+  <div class="card" onclick="play('sounds/درنا.mp3')"><img src="images/درنا.jpeg"><p>درنا</p></div>
+  <div class="card" onclick="play('sounds/هدهد.mp3')"><img src="images/هدهد.jpeg"><p>هدهد</p></div>
+  <div class="card" onclick="play('sounds/شترمرغ.mp3')"><img src="images/شترمرغ.jpeg"><p>شترمرغ</p></div>
+  <div class="card" onclick="play('sounds/بوقلمون.mp3')"><img src="images/بوقلمون.jpeg"><p>بوقلمون</p></div>
+  <div class="card" onclick="play('sounds/مرغ.mp3')"><img src="images/مرغ.jpeg"><p>مرغ</p></div>
+  <div class="card" onclick="play('sounds/خروس.mp3')"><img src="images/خروس.jpeg"><p>خروس</p></div>
+  <div class="card" onclick="play('sounds/جوجه.mp3')"><img src="images/جوجه.jpeg"><p>جوجه</p></div>
+  <div class="card" onclick="play('sounds/کبوتر.mp3')"><img src="images/کبوتر.jpeg"><p>کبوتر</p></div>
+  <div class="card" onclick="play('sounds/غاز.mp3')"><img src="images/غاز.jpeg"><p>غاز</p></div>
+  <div class="card" onclick="play('sounds/اردک.mp3')"><img src="images/اردک.jpeg"><p>اردک</p></div>
+  <div class="card" onclick="play('sounds/قو.mp3')"><img src="images/قو.jpeg"><p>قو</p></div>
+  <div class="card" onclick="play('sounds/لاک پشت.mp3')"><img src="images/لاک پشت.jpeg"><p>لاک‌پشت</p></div>
+  <div class="card" onclick="play('sounds/موش.mp3')"><img src="images/موش.jpeg"><p>موش</p></div>
+  <div class="card" onclick="play('sounds/سنجاب.mp3')"><img src="images/سنجاب.jpeg"><p>سنجاب</p></div>
+  <div class="card" onclick="play('sounds/خرگوش.mp3')"><img src="images/خرگوش.jpeg"><p>خرگوش</p></div>
+  <div class="card" onclick="play('sounds/خوک.mp3')"><img src="images/خوک.jpeg"><p>خوک</p></div>
+  <div class="card" onclick="play('sounds/جوجه تیغی.mp3')"><img src="images/جوجه تیغی.jpeg"><p>جوجه تیغی</p></div>
+  <div class="card" onclick="play('sounds/مار.mp3')"><img src="images/مار.jpeg"><p>مار</p></div>
+  <div class="card" onclick="play('sounds/مارمولک.mp3')"><img src="images/مارمولک.jpeg"><p>مارمولک</p></div>
+  <div class="card" onclick="play('sounds/تمساح.mp3')"><img src="images/تمساح.jpeg"><p>تمساح</p></div>
+  <div class="card" onclick="play('sounds/مرغ دریایی.mp3')"><img src="images/مرغ دریایی.jpeg"><p>مرغ دریایی</p></div>
+
+</div>
+
+
+<script>
+    let audio=new Audio();
+    function play(src){
+        audio.src=src;
+        audio.play();
+    }
+
+    // فعال‌سازی آفلاین
+    if("serviceWorker" in navigator){
+        navigator.serviceWorker.register("service-worker.js");
+    }
+</script>
+
+</body>
+</html>

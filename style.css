@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Tahoma;
+  background: linear-gradient(#b3e5fc,#e1f5fe);
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 22px;
+}
